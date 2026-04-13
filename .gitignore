@@ -3,6 +3,7 @@
 *.csv
 __pycache__/
 *.pyc
+src/data/patients.csv
 *.py[codz]
 *$py.class
 
