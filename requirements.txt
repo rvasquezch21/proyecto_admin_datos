@@ -1,3 +1,8 @@
 pymongo
 python-dotenv
 pandas
+numpy
+certifi
+scikit-learn
+joblib
+streamlit

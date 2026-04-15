@@ -31,6 +31,7 @@ def run_pipeline():
     steps = [
         ("Carga de datos raw → MongoDB",  os.path.join(base, "db",  "load_data.py")),
         ("ETL → patients_curated",         os.path.join(base, "etl", "patients.py")),
+        ("Entrenamiento modelo IA",        os.path.join(base, "ml",  "train.py")),
     ]
 
     log("=" * 55)
@@ -46,6 +47,7 @@ def run_pipeline():
     log("=" * 55)
     log("PIPELINE COMPLETADO EXITOSAMENTE")
     log("=" * 55)
+    log("Para correr la app: streamlit run src/app/app.py")
 
 if __name__ == "__main__":
     run_pipeline()
